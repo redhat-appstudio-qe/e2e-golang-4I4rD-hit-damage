@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-go-basic-gojk
+  namespace: e2e-demos-uifo-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images-protected@sha256:fb4baab536ca7d8c6ab38c69f5c79c1efd69a5c75de2e1b436af487b0b9888fd
+        name: my-go
+        resources: {}
+status: {}
