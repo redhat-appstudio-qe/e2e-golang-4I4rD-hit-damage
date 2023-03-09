@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-go-basic-gojk
     spec:
       containers:
-      - image: quay.io/redhat-appstudio-qe/test-images-protected:4I4rD-devfile-sample-go-basic-gojk
+      - image: quay.io/redhat-appstudio-qe/test-images-protected@sha256:fb4baab536ca7d8c6ab38c69f5c79c1efd69a5c75de2e1b436af487b0b9888fd
         name: my-go
         ports:
         - containerPort: 8081
